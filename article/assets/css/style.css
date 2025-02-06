@@ -23,7 +23,7 @@ div {
 }
 .display-container {
   position: relative;
-  height: 37vh;
+  height: 36vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
