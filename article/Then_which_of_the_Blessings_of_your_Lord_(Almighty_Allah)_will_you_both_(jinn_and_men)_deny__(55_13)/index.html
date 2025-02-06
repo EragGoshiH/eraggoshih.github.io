@@ -56,6 +56,8 @@
     <!--Posted Time--> ⏱ Last Updated:
   05 February 2025, 02:35 PM
 </div>
+  <button type="button" class="copy-button"
+data-url="https://ndcmdawah.github.io/"><i class="fa fa-copy"> </i> Copy Link</button>
 </div>
 </div>
 <div class="post-content">
@@ -99,5 +101,23 @@ I search for an excuse, but I find none. My existence itself is an answer to the
 </div>
 <? get_footer(); ?>
 <? wp_footer(); ?>
+
+  <script>
+  $(document).ready(function() {
+    // When a copy button is clicked
+    $(".copy-button").on("click", function() {
+      var urlToCopy = $(this).data("url");
+
+      // Create a hidden input field to copy the URL text
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val(urlToCopy).select();
+      document.execCommand("copy");
+      $temp.remove();
+
+      alert("Alhamdulillah, This Article's Link Is Successfully Copied To Your Clipboard!");
+    });
+  });
+  </script>
 </body>
 </html>
