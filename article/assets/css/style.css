@@ -15,15 +15,15 @@ div {
 .post-header {
   color: #fff!important;
   padding: 0 16px;
-  height: 50vh;
-  background : linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .2)), url(https://eraggoshih.github.io/article/assets/img/cover.jpg) fixed center/cover;
+  height: 31vh;
+  background : #42a4f5;
 }
 .post-content, .post-footer {
   padding: 0 16px;
 }
 .display-container {
   position: relative;
-  height: 50vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
