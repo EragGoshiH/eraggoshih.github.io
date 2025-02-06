@@ -15,7 +15,7 @@ div {
 .post-header {
   color: #fff!important;
   padding: 0 16px;
-  height: 41vh;
+  height: 38vh;
   background : #42a4f5;
 }
 .post-content, .post-footer {
@@ -23,7 +23,7 @@ div {
 }
 .display-container {
   position: relative;
-  height: 36vh;
+  height: 34vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
