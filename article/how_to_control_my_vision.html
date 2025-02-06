@@ -175,6 +175,24 @@ And the Prophet (peace and blessings of Allah be upon him) said: “… If a wom
 <? endwhile; else: echo ''; endif; ?>
 </div>
 <? get_footer(); ?>
-<? wp_footer(); ?>
+<? wp_footer(); ?> 
+  <script>
+  $(document).ready(function() {
+    // When a copy button is clicked
+    $(".copy-button").on("click", function() {
+      var urlToCopy = $(this).data("url");
+
+      // Create a hidden input field to copy the URL text
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val(urlToCopy).select();
+      document.execCommand("copy");
+      $temp.remove();
+
+      alert("Alhamdulillah, this article's link is successfully copied to your clipboard!");
+    });
+  });
+</script>
+
 </body>
 </html>
